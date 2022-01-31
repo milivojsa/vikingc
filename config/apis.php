@@ -13,8 +13,8 @@ return [
 
     'hotels' => [
         'url' => 'https://hotels4.p.rapidapi.com/locations/v2/search',
-        'x-rapidapi-host' => 'hotels4.p.rapidapi.com',
-        'x-rapidapi-key' => 'igUJCLIEnDmshJiOQEtDi2i4u8nnp1Y5R2jjsnstCAemJWv2j9',
+        'x-rapidapi-host' => env('HOTELS_RAPIDAPI_HOST'),
+        'x-rapidapi-key' => env('HOTELS_RAPIDAPI_KEY'),
     ],
 
     /*
@@ -28,7 +28,7 @@ return [
 
     'weather' => [
         'url' => 'api.openweathermap.org/data/2.5/weather',
-        'appid' => '09995706147d8c42f61618dca7083751',
+        'appid' => env('WEATHER_APPID'),
     ],
 
     /*
@@ -42,8 +42,8 @@ return [
 
     'covid_stats' => [
         'url' => 'https://covid-19-data.p.rapidapi.com/country',
-        'x-rapidapi-host' => 'covid-19-data.p.rapidapi.com',
-        'x-rapidapi-key' => 'igUJCLIEnDmshJiOQEtDi2i4u8nnp1Y5R2jjsnstCAemJWv2j9',
+        'x-rapidapi-host' => env('COVID_STATS_RAPIDAPI_HOST'),
+        'x-rapidapi-key' => env('COVID_STATS_RAPIDAPI_KEY'),
     ],
 
 ];
